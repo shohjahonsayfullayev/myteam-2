@@ -1,0 +1,104 @@
+.hero {
+    .hero__wrapper {
+        position: relative;
+    }
+    .hero__inner {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .container {
+    }
+    .hero__cantenir {
+        @media only screen and (min-width: 900px) {
+            width: 1110px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .hero__lift{
+        width: 327px;
+        @media only screen and (min-width: 1111px) {
+            width: 635px;
+        }
+    }
+
+    .hero__lift::before{
+        display: none;
+        width: 200px;
+        content: "";
+        background-image: url(./../../images/hero__bgmg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 200px;
+        position: absolute;
+        top: -8px;
+        left: 0;
+        @media only screen and (min-width: 1350px) {
+            display: inline-block;
+        }
+        
+    }
+
+    .hero__righit{
+        width: 327px;
+    }
+
+    .hero__hiddin {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 18px;
+
+        @media only screen and (min-width: 1111px) {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 100px;
+        }
+    }
+    .hero__span{
+        display: inline-block;
+        color: #F67E7E;
+    }
+
+    .hero__span-lift{
+        @media only screen and (min-width: 900px) {
+            @media only screen and (min-width: 900px) {
+                display: block;
+                background-color: black;
+                width: 50px;
+                height: 4px;
+                margin-bottom: 79px;
+            }
+        }
+    }
+    
+    .hero__text {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;   
+        color: #FFFFFF;
+        margin-bottom: 97px;
+
+        @media only screen and (min-width: 760px) {
+            margin-bottom: 156px;
+        }
+    }
+    .hero__bgimg-wrapper {
+        background-image: url(./../../images/hero-bgimg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 358px;
+        height: 200px;
+    }
+}
